@@ -51,7 +51,8 @@ void computer_vs_player()                                                       
         {
             get_computer_choice();
         }
-        char winner=check_winner();
+        char winner=check_winner();                                                                 // This winner Functions checks winner by Checking the positions of 
+                                                                                                    // Charcter 'X' and 'O'
         if(winner=='X'){
             system("cls");
             design();
