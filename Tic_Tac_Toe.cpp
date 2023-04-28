@@ -232,18 +232,20 @@ void get_o_player_choice()
 int main()
 {   
     int mode;
-    cout << "1. Computer VS Player." << endl;
-    cout << "2. Player VS Player." << endl;
+    
+    cout << "1. Player VS Player." << endl;
+    cout << "2. Computer VS Player." << endl;
+    
     cout << "Select Game Mode." << endl;
     cin >> mode;
     switch(mode)
     {
     case 1:
-    computer_vs_player();
+    player_vs_player();
     break;
     
     case 2:
-    player_vs_player();
+    computer_vs_player();
     break;
     
     default :
