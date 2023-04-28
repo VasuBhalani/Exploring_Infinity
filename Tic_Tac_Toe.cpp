@@ -118,6 +118,18 @@ int count_board(char symbol)
 
 
 }
+void get_computer_choice()
+{
+    srand(time(0));//for random choice from computer
+    int choice;
+    do
+    {
+
+        choice =  rand()%10;//randm choice from 0 t0 9
+
+    }while(board[choice] != ' ');
+    board[choice] = 'O';
+}
 void get_x_player_choice()
 {
 
