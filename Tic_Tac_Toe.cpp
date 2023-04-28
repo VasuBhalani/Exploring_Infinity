@@ -35,7 +35,7 @@ void design(){
 
 }
 
-void computer_vs_player()                                                                   // This Mode enables to play User against Computer
+void computer_vs_player()// This Mode enables to play User against Computer
 {
     string player_name;
     cout<<"Enter Your Name: ";
@@ -51,8 +51,8 @@ void computer_vs_player()                                                       
         {
             get_computer_choice();
         }
-        char winner=check_winner();                                                                 // This winner Functions checks winner by Checking the positions of 
-                                                                                                    // Charcter 'X' and 'O'
+        char winner=check_winner(); // This winner Functions checks winner by Checking the positions of charcter 'X' and 'O'
+                                                                                                                                                                   
         if(winner=='X'){
             system("cls");
             design();
@@ -71,7 +71,7 @@ void computer_vs_player()                                                       
     }
 }
 
-void player_vs_player()                                                                                    // This Mode enables user to play against each other 
+void player_vs_player()  // This Mode enables user to play against each other                                                                                   
 {   string x_player_name,o_player_name;
 
     cout <<"Enter X player name :  ";
