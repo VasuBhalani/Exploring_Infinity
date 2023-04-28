@@ -35,7 +35,7 @@ void design(){
 
 }
 
-void computer_vs_player()
+void computer_vs_player()                                                                   // This Mode enables to play User against Computer
 {
     string player_name;
     cout<<"Enter Your Name: ";
@@ -70,7 +70,7 @@ void computer_vs_player()
     }
 }
 
-void player_vs_player()
+void player_vs_player()                                                                                    // This Mode enables user to play against each other 
 {   string x_player_name,o_player_name;
 
     cout <<"Enter X player name :  ";
