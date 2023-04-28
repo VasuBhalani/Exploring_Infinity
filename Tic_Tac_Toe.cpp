@@ -2,9 +2,20 @@
 #include <ctime>
 #include <random>
 #include<stdlib.h>
-
 using namespace std;
 
+void design();
+char check_winner();
+
+void get_x_player_choice();
+void get_o_player_choice();//computer
+void get_computer_choice();
+
+int count_board(char symbol);
+void computer_vs_player();
+void player_vs_player();
+
+string x_player_name , o_player_name;
 char board[9] = {' ',' ',' ',' ',' ',' ',' ',' ',' '};
 void design(){
     cout<<"   "<<"    |   "<<"    |   "<<endl;
@@ -185,4 +196,29 @@ void get_o_player_choice()
               break;
         }
     }
+}
+int main()
+{   
+    int mode;
+    cout << "1. Computer VS Player." << endl;
+    cout << "2. Player VS Player." << endl;
+    cout << "Select Game Mode." << endl;
+    cin >> mode;
+    switch(mode)
+    {
+    case 1:
+    computer_vs_player();
+    break;
+    
+    case 2:
+    player_vs_player();
+    break;
+    
+    default :
+    cout << "Please Select Valid Game Mode" << endl;
+    break;
+
+    }
+
+    return 0;
 }
