@@ -118,3 +118,31 @@ int count_board(char symbol)
 
 
 }
+void get_x_player_choice()
+{
+
+    while(true)
+    {
+
+        cout << "Select Your position (1 - 9) : ";
+        int choice;
+        cin >> choice;
+        choice--;//because indexes are in between 0-9
+        if(choice <0 || choice >8)
+        {
+
+            cout << "Please Select your Choice From  (1-9)." << endl;
+
+        }
+        else if(board[choice] != ' ')
+        {
+            cout << "Please Select an Empty Position ." << endl;
+        }
+        else
+        {
+
+              board[choice]='X';
+              break;
+        }
+    }
+}
