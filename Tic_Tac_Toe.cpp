@@ -95,7 +95,7 @@ void computer_vs_player()// This Mode enables to play User against Computer
             cout<<" Computer Won the game. "<<endl;
             break;
         }else if (winner=='D'){
-            cout<<"Game is Draw."<<endl;
+            cout<<" Game is Draw."<<endl;
             break;
         }
     }
