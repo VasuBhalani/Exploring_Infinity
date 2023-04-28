@@ -17,6 +17,7 @@ void player_vs_player();
 
 string x_player_name , o_player_name;
 char board[9] = {' ',' ',' ',' ',' ',' ',' ',' ',' '};
+// logic behind the design of the board
 void design(){
     cout<<"   "<<"    |   "<<"    |   "<<endl;
     cout<<"   "<<board[0]<<"   |   "<<board[1]<<"   |   "<< board[2]<<endl;
